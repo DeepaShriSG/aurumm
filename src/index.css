@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+  body{
+    font-family: "Outfit", serif;
+     background-color: #000103;
+    color:"#f3f4f6"
+  }
+
+  a{
+    font-family: "Outfit", serif;
+  }
+
+
+  .header-section {
+    background-image: url(/aurummBanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .headerText{
+    background-color: #000103;
+    padding: 10px;
+    opacity: 80%;
+  }
+
+  .demo-button:active a{
+  display: inline-block;
+  padding: 7px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to right, #0078D7, #00CC6A);
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.demo-button:hover {
+  background: linear-gradient(to right, #0062B1, #00A34F);
+}
+
+.demo-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.headerText{
+  font-family: "Playfair Display", serif;
+}
+
+
+.wrapper{
+  padding: 70px 0;
+  overflow-x: hidden;
+}
+
+.my-slider{
+  padding: 0 70px;
+}
+
+.slick-initialized .slick-slide{
+  background-color: transparent;
+  color: #FFF;
+  height: 50px;
+  margin: 0 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-next, .slick-prev{
+  z-index: 5;
+}
+.slick-next{
+  right: 15px;
+}
+.slick-prev{
+  left: 15px;
+}
+.slick-next:before, .slick-prev:before{
+  color: #000;
+  font-size: 26px;
+}
+
+.tilt-hover-container {
+  perspective: 1000px; 
+}
+
+.tilt-hover {
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.tilt-hover:hover {
+  transform: rotateX(20deg) rotateY(20deg) scale(1.05);
+}
