@@ -3,10 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <section
-      className="relative mt-[-50px] bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('/head_banner.1ab9b894.png')",
-      }}
+      className="relative mt-[-50px]"
     >
       <div className="container mx-auto px-6 lg:px-10 xl:max-w-[1440px]">
         {/* Navbar */}

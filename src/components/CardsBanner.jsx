@@ -37,7 +37,7 @@ const CardsBanner = () => {
 
   return (
     <section className="container mx-auto m-2 p-3">
-      <div className="bg-gray-100 py-8">
+      <div className="py-8">
         <h2 className="text-center text-gray-100 text-xl font-bold mb-6">Brands That Trust Us!</h2>
         <Slider {...settings}>
           {brands.map((brand) => (

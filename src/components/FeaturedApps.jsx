@@ -2,8 +2,8 @@ import React from "react";
 
 const AppCard = ({ title, subTitle, buttonText, bgColor, description, textColor, marginBottom }) => {
   return (
-    <div className={`${bgColor} rounded-lg shadow-md p-6 w-full mx-2 mb-4`}>
-      <div className="flex gap-2 bg-[#fff] w-[180px] p-3 shadow-md rounded-md">
+    <div className={`${bgColor} hover:scale-110 transition duration-800 ease-in transform rounded-lg shadow-md p-6 w-full mx-2 mb-4 `}>
+      <div className="flex gap-4 bg-[#fff] w-[180px] p-3 shadow-md rounded-md">
         <img alt="no-symbol" src="/icon.png" width={35} height={35} style={{ color: "transparent" }} />
         <p className="text-[22px] text-[#2C2C3C] font-[700]  whitespace-nowrap">{title}</p>
       </div>
